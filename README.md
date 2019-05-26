@@ -1,1 +1,2 @@
-# Workshop_ICMC_IntroToInteractiveSpaces
+# ICMC - Intro To Interactive Spaces Workshop
+## by Pierluigi Dalla Rosa
