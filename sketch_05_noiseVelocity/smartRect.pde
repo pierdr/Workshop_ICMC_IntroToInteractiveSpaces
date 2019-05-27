@@ -14,10 +14,10 @@ class smartRect{
     rect(this.x,this.y,this.size,this.size);
   }
   
-  public void addToPosX(int amount){
+  public void addToPosX(float amount){
     this.x +=amount;
   }
-  public void addToPosY(int amount){
+  public void addToPosY(float amount){
     this.y +=amount;
   }
     
