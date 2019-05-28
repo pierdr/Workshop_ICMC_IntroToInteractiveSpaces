@@ -32,3 +32,19 @@ void oscEvent(OscMessage msg)
     colorReceived = color(newRed,newGreen,newBlue);
   }
 }
+
+void keyPressed()
+{
+  if(key == 'a')
+  {
+    //start recording
+    OscMessage msg = new OscMessage("/wekinator/control/startRecording");
+    osc.send(msg,wekLocation);
+  }
+  else if(key == 's')
+  {
+    //stor recording
+    OscMessage msg = new OscMessage("/wekinator/control/stopRecording");
+    osc.send(msg,wekLocation);
+  }
+}
