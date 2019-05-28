@@ -15,12 +15,12 @@ void draw()
 }
 void oscEvent(OscMessage message)
 {
-  if(message.checkAddrPattern("/changeBg"))
+  if(message.checkAddrPattern("/oscControl/slider1"))
   {
     bg = message.get(0).intValue();
     println(message.get(2).stringValue());
     
   return;  
   }
-  println("message received");
+  println("message received "+message.addrPattern());
 }
